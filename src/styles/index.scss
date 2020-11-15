@@ -1,0 +1,137 @@
+@import "./reset.scss";
+@import "~antd/dist/antd.css";
+@import "./variables.scss";
+html {
+    overflow: auto;
+}
+#root,
+body,
+html {
+    height: 100%;
+    width: 100%;
+    color: $COLOR-PRIMARY;
+}
+li {
+    list-style: none;
+}
+#app {
+    position: relative;
+    background: $BG-COLOR-PRIMARY;
+    min-height: 100vh;
+}
+
+// antd reset
+// top page
+.top-page {
+    .ant-typography {
+        color: inherit;
+    }
+    //Headong
+    .ant-layout-header {
+        color: $COLOR-WHITE;
+        background-color: $COLOR-PRIMARY;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 9000;
+        transition: all ease 0.3s;
+        &.hide {
+            transform: translateY(-100%);
+        }
+        .ant-row {
+            height: 100%;
+        }
+        .ant-typography {
+            color: inherit;
+            margin: 0;
+        }
+    }
+    .how-to-keep-section {
+        padding: 40px 20px;
+    }
+    .input-section {
+        padding: 40px 20px;
+        color: $COLOR-PRIMARY;
+        .input-resourse-list {
+            // max-width: 500px;
+            & > *:not(:first-child) {
+                margin-top: 8px;
+            }
+        }
+        .input-resourse-item {
+            transition: all ease $TRANSITION-DURATION-BASE;
+            &:hover {
+                opacity: $HOVER-OPACITY;
+                transform: translateY(-4px);
+            }
+            &:active {
+                opacity: $ACTIVE-OPACITY;
+                transform: translateY(0);
+            }
+            // OVERRIDE antd
+            .ant-card {
+                cursor: pointer;
+                min-height: 200px;
+                color: $COLOR-WHITE;
+                background-color: $COLOR-SECONDARY;
+                border-radius: 5px;
+            }
+        }
+        .ant-btn {
+            background-color: $COLOR-SECONDARY;
+            color: $COLOR-WHITE;
+            &[disabled] {
+                opacity: $DISABLED-OPACITY;
+                &:hover {
+                    opacity: $DISABLED-OPACITY;
+                }
+                &:active {
+                    opacity: $DISABLED-OPACITY;
+                }
+            }
+            &:hover {
+                opacity: $HOVER-OPACITY;
+            }
+            &:active {
+                opacity: $ACTIVE-OPACITY;
+            }
+        }
+    }
+    .output-section {
+        padding: 40px 20px;
+    }
+    .rss-introduction-section {
+        padding: 40px 20px;
+        //TODO Buttonのスタイルの共通化
+        .ant-btn {
+            background-color: $COLOR-SECONDARY;
+            color: $COLOR-WHITE;
+            &[disabled] {
+                opacity: $DISABLED-OPACITY;
+                &:hover {
+                    opacity: $DISABLED-OPACITY;
+                }
+                &:active {
+                    opacity: $DISABLED-OPACITY;
+                }
+            }
+            &:hover {
+                opacity: $HOVER-OPACITY;
+            }
+            &:active {
+                opacity: $ACTIVE-OPACITY;
+            }
+        }
+    }
+    //Footer
+    .ant-layout-footer {
+        color: $COLOR-WHITE;
+        background-color: $COLOR-PRIMARY;
+        padding: 0 20px;
+        .ant-typography {
+            color: inherit;
+            margin: 0;
+        }
+    }
+}
