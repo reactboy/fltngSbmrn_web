@@ -21,6 +21,56 @@ li {
 }
 
 // antd reset
+
+//app common parts
+.app-header {
+    .ant-layout-header {
+        padding: 0 20px;
+        color: $COLOR-WHITE;
+        background-color: $COLOR-PRIMARY;
+    }
+    .ant-typography {
+        color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    //TODO Buttonのスタイルの共通化
+    .ant-btn {
+        background-color: $COLOR-SECONDARY;
+        color: $COLOR-WHITE;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        &[disabled] {
+            opacity: $DISABLED-OPACITY;
+            &:hover {
+                opacity: $DISABLED-OPACITY;
+            }
+            &:active {
+                opacity: $DISABLED-OPACITY;
+            }
+        }
+        &:hover {
+            opacity: $HOVER-OPACITY;
+            border: none;
+        }
+        &:active {
+            opacity: $ACTIVE-OPACITY;
+            border: none;
+        }
+    }
+}
+.app-footer {
+    .ant-layout-footer {
+        background-color: $COLOR-PRIMARY;
+        color: $COLOR-WHITE;
+    }
+    .ant-typography {
+        color: inherit;
+    }
+}
+
 // top page
 .top-page {
     .ant-typography {
@@ -78,10 +128,13 @@ li {
                 border-radius: 5px;
             }
         }
+
+        //TODO Buttonのスタイルの共通化
         .ant-btn {
             background-color: $COLOR-SECONDARY;
             color: $COLOR-WHITE;
             border-radius: 5px;
+            outline: none;
             &[disabled] {
                 opacity: $DISABLED-OPACITY;
                 &:hover {
@@ -109,6 +162,7 @@ li {
             background-color: $COLOR-SECONDARY;
             color: $COLOR-WHITE;
             border-radius: 5px;
+            outline: none;
             &[disabled] {
                 opacity: $DISABLED-OPACITY;
                 &:hover {

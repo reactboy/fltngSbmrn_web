@@ -1,5 +1,11 @@
 import React from "react";
+import { AppHeader, AppFooter } from "../../utils/components";
 
 export const Feeds = () => {
-    return <>Feeds</>;
+    return (
+        <>
+            <AppHeader />
+            <AppFooter />
+        </>
+    );
 };
