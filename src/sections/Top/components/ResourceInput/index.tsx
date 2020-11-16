@@ -62,7 +62,8 @@ export const ResourceInput = () => {
                                     <Title level={3}>インプットの手段</Title>
                                     <Paragraph>
                                         インプットの手段としてはブログ・メディアの記事、書籍、動画、音声など色々ありますよね。
-                                        <br />
+                                    </Paragraph>
+                                    <Paragraph>
                                         これらをRSSリーダーなどを活用して自分専用のリソース集のようなものを作ると便利だと思います。
                                     </Paragraph>
                                 </Col>

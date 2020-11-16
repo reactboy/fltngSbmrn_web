@@ -81,6 +81,7 @@ li {
         .ant-btn {
             background-color: $COLOR-SECONDARY;
             color: $COLOR-WHITE;
+            border-radius: 5px;
             &[disabled] {
                 opacity: $DISABLED-OPACITY;
                 &:hover {
@@ -107,6 +108,7 @@ li {
         .ant-btn {
             background-color: $COLOR-SECONDARY;
             color: $COLOR-WHITE;
+            border-radius: 5px;
             &[disabled] {
                 opacity: $DISABLED-OPACITY;
                 &:hover {
