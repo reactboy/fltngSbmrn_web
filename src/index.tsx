@@ -5,7 +5,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // style
 import "./styles/index.scss";
 // page components
-import { Top, Home, Feeds, Bookmarks, Profile, NotFound } from "./sections";
+import {
+    Top,
+    Home,
+    Feeds,
+    Bookmarks,
+    Profile,
+    NotFound,
+    Login,
+} from "./sections";
 
 const App = () => {
     return (
@@ -16,6 +24,7 @@ const App = () => {
                 <Route exact path="/feeds" component={Feeds} />
                 <Route exact path="/bookmarks" component={Bookmarks} />
                 <Route exact path="/profile" component={Profile} />
+                <Route exact path="/login" component={Login} />
                 <Route path="/not-found" component={NotFound} />
             </Switch>
         </Router>
