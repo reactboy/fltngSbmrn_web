@@ -29,7 +29,7 @@ li {
     .ant-layout-header {
         padding: 0 20px;
         color: $COLOR-WHITE;
-        background-color: $COLOR-PRIMARY;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
     }
     .ant-typography {
         color: inherit;
@@ -39,7 +39,7 @@ li {
 }
 .app-footer {
     .ant-layout-footer {
-        background-color: $COLOR-PRIMARY;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
         color: $COLOR-WHITE;
         padding: 0 20px;
     }
@@ -60,7 +60,7 @@ li {
     }
     .ant-layout-header {
         color: $COLOR-WHITE;
-        background-color: $COLOR-PRIMARY;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
         padding: 0 20px;
         .ant-row {
             height: 100%;
@@ -78,7 +78,7 @@ li {
 .footer {
     .ant-layout-footer {
         color: $COLOR-WHITE;
-        background-color: $COLOR-PRIMARY;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
         padding: 0 20px;
         .ant-typography {
             color: inherit;
@@ -119,7 +119,7 @@ li {
                 cursor: pointer;
                 min-height: 200px;
                 color: $COLOR-WHITE;
-                background-color: $COLOR-SECONDARY;
+                background: $BG-COLOR-PRIMARY-GRADIENT;
                 border-radius: 5px;
             }
         }
@@ -136,7 +136,7 @@ li {
     .login-panel {
         height: 100%;
         &__content {
-            background-color: $COLOR-SECONDARY;
+            background: $BG-COLOR-PRIMARY-GRADIENT;
             color: $COLOR-WHITE;
             padding: 30px;
             border-radius: 5px;
