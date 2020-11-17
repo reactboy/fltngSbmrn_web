@@ -22,3 +22,28 @@
         border: none;
     }
 }
+
+.ant-btn.tertiary {
+    background-color: $COLOR-TERTIARY;
+    color: $COLOR-DARK;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    &[disabled] {
+        opacity: $DISABLED-OPACITY;
+        &:hover {
+            opacity: $DISABLED-OPACITY;
+        }
+        &:active {
+            opacity: $DISABLED-OPACITY;
+        }
+    }
+    &:hover {
+        opacity: $HOVER-OPACITY;
+        border: none;
+    }
+    &:active {
+        opacity: $ACTIVE-OPACITY;
+        border: none;
+    }
+}

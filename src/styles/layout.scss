@@ -1,0 +1,7 @@
+// full screen layout
+.full-screen {
+    height: 100%;
+    &__content {
+        flex: 1;
+    }
+}
