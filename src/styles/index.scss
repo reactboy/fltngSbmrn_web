@@ -1,6 +1,7 @@
 @import "./reset.scss";
 @import "~antd/dist/antd.css";
 @import "./variables.scss";
+@import "./button.scss";
 html {
     overflow: auto;
 }
@@ -21,7 +22,6 @@ li {
 }
 
 // antd reset
-
 //app common parts
 .app-header {
     .ant-layout-header {
@@ -33,32 +33,6 @@ li {
         color: inherit;
         margin: 0;
         padding: 0;
-    }
-
-    //TODO Buttonのスタイルの共通化
-    .ant-btn {
-        background-color: $COLOR-SECONDARY;
-        color: $COLOR-WHITE;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        &[disabled] {
-            opacity: $DISABLED-OPACITY;
-            &:hover {
-                opacity: $DISABLED-OPACITY;
-            }
-            &:active {
-                opacity: $DISABLED-OPACITY;
-            }
-        }
-        &:hover {
-            opacity: $HOVER-OPACITY;
-            border: none;
-        }
-        &:active {
-            opacity: $ACTIVE-OPACITY;
-            border: none;
-        }
     }
 }
 .app-footer {
@@ -128,57 +102,12 @@ li {
                 border-radius: 5px;
             }
         }
-
-        //TODO Buttonのスタイルの共通化
-        .ant-btn {
-            background-color: $COLOR-SECONDARY;
-            color: $COLOR-WHITE;
-            border-radius: 5px;
-            outline: none;
-            &[disabled] {
-                opacity: $DISABLED-OPACITY;
-                &:hover {
-                    opacity: $DISABLED-OPACITY;
-                }
-                &:active {
-                    opacity: $DISABLED-OPACITY;
-                }
-            }
-            &:hover {
-                opacity: $HOVER-OPACITY;
-            }
-            &:active {
-                opacity: $ACTIVE-OPACITY;
-            }
-        }
     }
     .output-section {
         padding: 40px 20px;
     }
     .rss-introduction-section {
         padding: 40px 20px;
-        //TODO Buttonのスタイルの共通化
-        .ant-btn {
-            background-color: $COLOR-SECONDARY;
-            color: $COLOR-WHITE;
-            border-radius: 5px;
-            outline: none;
-            &[disabled] {
-                opacity: $DISABLED-OPACITY;
-                &:hover {
-                    opacity: $DISABLED-OPACITY;
-                }
-                &:active {
-                    opacity: $DISABLED-OPACITY;
-                }
-            }
-            &:hover {
-                opacity: $HOVER-OPACITY;
-            }
-            &:active {
-                opacity: $ACTIVE-OPACITY;
-            }
-        }
     }
     //Footer
     .ant-layout-footer {

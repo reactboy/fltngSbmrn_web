@@ -70,7 +70,7 @@ export const ResourceInput = () => {
                             </Row>
                             <Row>
                                 <Col>
-                                    <Button disabled>
+                                    <Button className="primary" disabled>
                                         Submarine
                                         stacksで自分だけのリソース集を作る
                                     </Button>

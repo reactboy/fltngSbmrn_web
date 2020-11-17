@@ -23,7 +23,7 @@ export const RssIntroduction = () => {
             <div>
                 <Row>
                     <Col>
-                        <Button disabled>
+                        <Button className="primary" disabled>
                             Submarine stacksで自分だけのリソース集を作る
                         </Button>
                         <Paragraph>※準備中</Paragraph>
