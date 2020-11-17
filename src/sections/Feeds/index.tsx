@@ -5,6 +5,7 @@ export const Feeds = () => {
     return (
         <>
             <AppHeader />
+            feeds
             <AppFooter />
         </>
     );

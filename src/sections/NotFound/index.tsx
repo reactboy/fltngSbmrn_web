@@ -1,5 +1,11 @@
 import React from "react";
-
+import { AppHeader, AppFooter } from "../../utils/components";
 export const NotFound = () => {
-    return <>Not Found</>;
+    return (
+        <>
+            <AppHeader />
+            bookmarks
+            <AppFooter />
+        </>
+    );
 };
