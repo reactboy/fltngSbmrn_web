@@ -41,9 +41,11 @@ li {
     .ant-layout-footer {
         background-color: $COLOR-PRIMARY;
         color: $COLOR-WHITE;
+        padding: 0 20px;
     }
     .ant-typography {
         color: inherit;
+        margin: 0;
     }
 }
 //Header

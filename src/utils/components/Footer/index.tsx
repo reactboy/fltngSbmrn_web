@@ -11,7 +11,7 @@ export const Footer = () => {
             <AntdFooter>
                 <Row justify="center">
                     <Col>
-                        <Title>Submarine stacks</Title>
+                        <Title level={2}>Submarine stacks</Title>
                     </Col>
                 </Row>
                 <Row justify="center">
