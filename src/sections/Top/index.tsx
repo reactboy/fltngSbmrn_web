@@ -1,11 +1,10 @@
 import React from "react";
+import { Header, Footer } from "../../utils/components";
 import {
-    Header,
     HowToKeepUp,
     ResourceInput,
     ResourceOutput,
     RssIntroduction,
-    Footer,
 } from "./components";
 
 export const Top = () => {
