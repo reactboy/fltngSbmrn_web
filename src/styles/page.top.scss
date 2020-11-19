@@ -1,0 +1,43 @@
+.top-page {
+    .ant-typography {
+        color: inherit;
+    }
+    .how-to-keep-section {
+        padding: 40px 20px;
+    }
+    .input-section {
+        padding: 40px 20px;
+        color: $COLOR-PRIMARY;
+        .input-resourse-list {
+            // max-width: 500px;
+            & > *:not(:first-child) {
+                margin-top: 8px;
+            }
+        }
+        .input-resourse-item {
+            transition: all ease $TRANSITION-DURATION-BASE;
+            &:hover {
+                opacity: $HOVER-OPACITY;
+                transform: translateY(-4px);
+            }
+            &:active {
+                opacity: $ACTIVE-OPACITY;
+                transform: translateY(0);
+            }
+            // OVERRIDE antd
+            .ant-card {
+                cursor: pointer;
+                min-height: 200px;
+                color: $COLOR-WHITE;
+                background: $BG-COLOR-PRIMARY-GRADIENT;
+                border-radius: 5px;
+            }
+        }
+    }
+    .output-section {
+        padding: 40px 20px;
+    }
+    .rss-introduction-section {
+        padding: 40px 20px;
+    }
+}

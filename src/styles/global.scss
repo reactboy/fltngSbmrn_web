@@ -1,0 +1,82 @@
+// global style
+html {
+    overflow: auto;
+}
+#root,
+body,
+html {
+    height: 100%;
+    width: 100%;
+    color: $COLOR-PRIMARY;
+}
+li {
+    list-style: none;
+}
+#app {
+    position: relative;
+    background: $BG-COLOR-PRIMARY;
+    min-height: 100vh;
+}
+
+//app common parts　TODO 別ファイルに分ける
+.app-header {
+    .ant-layout-header {
+        padding: 0 20px;
+        color: $COLOR-WHITE;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
+    }
+    .ant-typography {
+        color: inherit;
+        margin: 0;
+        padding: 0;
+    }
+}
+.app-footer {
+    .ant-layout-footer {
+        background: $BG-COLOR-PRIMARY-GRADIENT;
+        color: $COLOR-WHITE;
+        padding: 0 20px;
+    }
+    .ant-typography {
+        color: inherit;
+        margin: 0;
+    }
+}
+//Header
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    transition: all ease 0.3s;
+    &.hide {
+        transform: translateY(-100%);
+    }
+    .ant-layout-header {
+        color: $COLOR-WHITE;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
+        padding: 0 20px;
+        .ant-row {
+            height: 100%;
+        }
+        .ant-typography {
+            color: inherit;
+            margin: 0;
+            &.title-logo {
+                cursor: pointer;
+            }
+        }
+    }
+}
+//Footer
+.footer {
+    .ant-layout-footer {
+        color: $COLOR-WHITE;
+        background: $BG-COLOR-PRIMARY-GRADIENT;
+        padding: 0 20px;
+        .ant-typography {
+            color: inherit;
+            margin: 0;
+        }
+    }
+}

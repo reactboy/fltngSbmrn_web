@@ -1,0 +1,106 @@
+.feeds-page {
+    background-color: $COLOR-PRIMARY;
+    &__content {
+        padding: 20px;
+        .feed-panel {
+            &__list-section {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                .feed-list {
+                    justify-self: center;
+                    color: $COLOR-WHITE;
+                    background: $BG-COLOR-PRIMARY-GRADIENT;
+                    border-radius: 5px;
+                    width: 100%;
+                    padding: 10px 10px 5px;
+                    &__name {
+                        color: inherit;
+                        font-weight: bold;
+                    }
+                    &__list {
+                        .feed-list-item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            &__title {
+                                padding: 4px;
+                                color: inherit;
+                                min-height: 40px;
+                                border-bottom: 1px solid $COLOR-PRIMARY;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                span {
+                                    cursor: pointer;
+                                }
+                            }
+                            &__bookmark-icon {
+                                cursor: pointer;
+                                margin-left: 10px;
+                                svg {
+                                    width: 16px;
+                                    height: 16px;
+                                    transition: transform 0.4s ease;
+                                }
+                                &:hover {
+                                    svg {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                &:active {
+                                    svg {
+                                        transform: scale(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__more {
+                        text-align: center;
+                        & > * {
+                            cursor: pointer;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            &__control-section {
+                margin-top: 10px;
+            }
+            &__add-button {
+                color: $COLOR-WHITE;
+                background: $BG-COLOR-PRIMARY-GRADIENT;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &-icon {
+                    width: 100%;
+                    max-width: 100px;
+                    min-height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                        transition: transform 0.4s ease;
+                    }
+                }
+                &:hover {
+                    svg {
+                        transform: scale(1.2);
+                    }
+                }
+                &:active {
+                    svg {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.login-page {
+    .login-panel {
+        height: 100%;
+        &__content {
+            background: $BG-COLOR-PRIMARY-GRADIENT;
+            color: $COLOR-WHITE;
+            padding: 30px;
+            border-radius: 5px;
+            .ant-typography {
+                color: inherit;
+                padding: 0;
+                margin: 0;
+            }
+            *:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+        &__buttons {
+            *:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
