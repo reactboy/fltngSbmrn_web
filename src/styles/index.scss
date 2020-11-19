@@ -149,5 +149,10 @@ li {
                 margin-top: 10px;
             }
         }
+        &__buttons {
+            *:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
     }
 }

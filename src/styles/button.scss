@@ -23,6 +23,29 @@
     }
 }
 
+.ant-btn.primary-outline {
+    background-color: $COLOR-WHITE;
+    color: $COLOR-SECONDARY;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid $COLOR-SECONDARY;
+    &[disabled] {
+        opacity: $DISABLED-OPACITY;
+        &:hover {
+            opacity: $DISABLED-OPACITY;
+        }
+        &:active {
+            opacity: $DISABLED-OPACITY;
+        }
+    }
+    &:hover {
+        opacity: $HOVER-OPACITY;
+    }
+    &:active {
+        opacity: $ACTIVE-OPACITY;
+    }
+}
+
 .ant-btn.tertiary {
     background-color: $COLOR-TERTIARY;
     color: $COLOR-DARK;
@@ -45,5 +68,28 @@
     &:active {
         opacity: $ACTIVE-OPACITY;
         border: none;
+    }
+}
+
+.ant-btn.tertiary-outline {
+    background-color: $COLOR-WHITE;
+    color: $COLOR-TERTIARY;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid $COLOR-TERTIARY;
+    &[disabled] {
+        opacity: $DISABLED-OPACITY;
+        &:hover {
+            opacity: $DISABLED-OPACITY;
+        }
+        &:active {
+            opacity: $DISABLED-OPACITY;
+        }
+    }
+    &:hover {
+        opacity: $HOVER-OPACITY;
+    }
+    &:active {
+        opacity: $ACTIVE-OPACITY;
     }
 }
