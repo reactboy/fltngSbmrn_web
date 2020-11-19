@@ -18,9 +18,14 @@ export const LoginPanel = () => {
                 <Paragraph>
                     Googleでログインして、自分だけのFeedを作ろう🚀
                 </Paragraph>
-                <Button className="tertiary" onClick={onClickLogin}>
-                    Googleでログイン
-                </Button>
+                <div className="login-panel__buttons">
+                    <Button className="tertiary" onClick={onClickLogin}>
+                        Googleでログイン
+                    </Button>
+                    <Button className="primary-outline" onClick={onClickLogin}>
+                        ログインしないで始める
+                    </Button>
+                </div>
                 <Paragraph>
                     ※ボタンを押すとGoogleのページにリダイレクトされます
                 </Paragraph>
